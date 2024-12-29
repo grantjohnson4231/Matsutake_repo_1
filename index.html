@@ -50,7 +50,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[45.26541212164668,-125.03911554112835],[49.245831295667884,-116.12372488016611]]);
+        }).fitBounds([[45.585961824395056,-125.51620795160714],[49.04343914434124,-117.68332685386586]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -112,15 +112,15 @@
         });
         layer_GoogleSatelliteHybrid_0;
         map.addLayer(layer_GoogleSatelliteHybrid_0);
-        map.createPane('pane_Matsutake_50_1');
-        map.getPane('pane_Matsutake_50_1').style.zIndex = 401;
-        var img_Matsutake_50_1 = 'data/Matsutake_50_1.png';
-        var img_bounds_Matsutake_50_1 = [[45.38221993278481,-124.88704236198858],[49.16307052902259,-116.50798962346563]];
-        var layer_Matsutake_50_1 = new L.imageOverlay(img_Matsutake_50_1,
-                                              img_bounds_Matsutake_50_1,
-                                              {pane: 'pane_Matsutake_50_1'});
-        bounds_group.addLayer(layer_Matsutake_50_1);
-        map.addLayer(layer_Matsutake_50_1);
+        map.createPane('pane_Matsutake_areas_1');
+        map.getPane('pane_Matsutake_areas_1').style.zIndex = 401;
+        var img_Matsutake_areas_1 = 'data/Matsutake_areas_1.png';
+        var img_bounds_Matsutake_areas_1 = [[45.38230267064381,-124.88704236235147],[49.16307050055873,-116.50785383616231]];
+        var layer_Matsutake_areas_1 = new L.imageOverlay(img_Matsutake_areas_1,
+                                              img_bounds_Matsutake_areas_1,
+                                              {pane: 'pane_Matsutake_areas_1'});
+        bounds_group.addLayer(layer_Matsutake_areas_1);
+        map.addLayer(layer_Matsutake_areas_1);
         function pop_ForestServiceLands_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -459,7 +459,7 @@
             {label: '<img src="legend/WAParks_4.png" /> WA Parks', layer: layer_WAParks_4},
             {label: '<img src="legend/NationalParks_3.png" /> National Parks', layer: layer_NationalParks_3},
             {label: '<img src="legend/ForestServiceLands_2.png" /> Forest Service Lands', layer: layer_ForestServiceLands_2},]},
-            {label: "Matsutake_50", layer: layer_Matsutake_50_1},
+            {label: "Matsutake_areas", layer: layer_Matsutake_areas_1},
             {label: "Google Satellite Hybrid", layer: layer_GoogleSatelliteHybrid_0, radioGroup: 'bm' },]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
