@@ -170,13 +170,13 @@
 	will-change: opacity;
 	}
 .leaflet-fade-anim .leaflet-popup {
-	will-change: opacity;
+	opacity: 0;
 	-webkit-transition: opacity 0.2s linear;
 	   -moz-transition: opacity 0.2s linear;
 	        transition: opacity 0.2s linear;
 	}
 .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-	will-change: opacity;
+	opacity: 1;
 	}
 .leaflet-zoom-animated {
 	-webkit-transform-origin: 0 0;
